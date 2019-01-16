@@ -14,7 +14,7 @@ def assign_rooms(array)
   badges = []
   array.each do |names|
     roomnumber. = badges.index + 1
-    badges << "Hello, #{name}! You'll be assigned to room" + roomnumber.to_s + "."
+    badges << "Hello, #{name}! You'll be assigned to room" + roomnumber + "."
   end
   return badges
 end
