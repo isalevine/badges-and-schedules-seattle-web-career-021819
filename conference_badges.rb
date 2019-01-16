@@ -17,3 +17,4 @@ def assign_rooms(array)
     badges << "Hello, #{name}! You'll be assigned to room" + roomnumber + "."
   end
   return badges
+end
