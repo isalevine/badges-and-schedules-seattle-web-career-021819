@@ -12,10 +12,9 @@ end
 
 def assign_rooms(array)
   badges = []
-  array.each do |names|
-    roomnumber = badges.index(names) + 1
-    badgetext = "Hello, #{names}! You'll be assigned to room" + roomnumber.to_s + "."
-    badges << badgetext
+  array.each_with_index do |names, index|
+    roomnumber = index + 1
+    badges << "Hello, #{names}! You'll be assigned to room #{roomnumber}."
   end
   return badges
 end
